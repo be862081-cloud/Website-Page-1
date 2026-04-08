@@ -1,0 +1,120 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Products - CAB Gold Jewelry Philippines</title>
+    <style>
+        body {
+            background-color: #f5e6c8;
+            font-family: serif;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 10px;
+            padding: 10px 15px;
+            background-color: gold;
+            text-decoration: none;
+            color: black;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #d4af37;
+        }
+
+        h1 {
+            letter-spacing: 2px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            margin: 10px 0 5px;
+        }
+
+        .price {
+            color: #b89600;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: gold;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #d4af37;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CAB's JEWELRY COLLECTION</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="payment.html">Payment</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Product Grid -->
+    <div class="gallery">
+
+        <div class="product">
+            <img src="necklace1.html.jpg" alt="Gold Necklace">
+            <h3>Gold Necklace</h3>
+            <p class="price">₱5,000</p>
+            <a href="payment.html?product=Gold Necklace&price=5000" class="btn">Buy Now</a>
+        </div>
+
+        <div class="product">
+            <img src="ring1.html.jpg" alt="Gold Ring">
+            <h3>Gold Ring</h3>
+            <p class="price">₱3,000</p>
+            <a href="payment.html?product=Gold Ring&price=3000" class="btn">Buy Now</a>
+        </div>
+
+        <div class="product">
+            <img src="bracelet1.html.jpg" alt="Gold Bracelet">
+            <h3>Gold Bracelet</h3>
+            <p class="price">₱4,500</p>
+            <a href="payment.html?product=Gold Bracelet&price=4500" class="btn">Buy Now</a>
+        </div>
+
+        <div class="product">
+            <img src="earrings1.html.jpg" alt="Gold Earrings">
+            <h3>Gold Earrings</h3>
+            <p class="price">₱2,500</p>
+            <a href="payment.html?product=Gold Earrings&price=2500" class="btn">Buy Now</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
