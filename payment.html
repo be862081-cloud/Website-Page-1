@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment - CAB Gold Jewelry</title>
+    <style>
+        body {
+            background-color: #f5e6c8;
+            font-family: serif;
+            text-align: center;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            margin: 50px auto;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        button {
+            padding: 10px;
+            background-color: gold;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d4af37;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Payment Page</h1>
+
+    <div class="box">
+        <h2 id="productName"></h2>
+        <p id="productPrice"></p>
+
+        <button onclick="payNow()">Confirm Payment</button>
+    </div>
+
+    <script>
+        // Get data from URL
+        const params = new URLSearchParams(window.location.search);
+        const product = params.get("product");
+        const price = params.get("price");
+
+        // Display on page
+        document.getElementById("productName").innerText = product;
+        document.getElementById("productPrice").innerText = "Price: ₱" + price;
+
+        function payNow() {
+            alert("Payment Successful for " + product + "!");
+        }
+    </script>
+
+</body>
+</html>
+
+
